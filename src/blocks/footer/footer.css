@@ -1,0 +1,38 @@
+@import url(./_social-icons/footer__social-icons.css);
+@import url(./__menu/footer__menu.css);
+@import url(./__copyright/footer__copyright.css);
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-height: 64px;
+  flex-wrap: nowrap;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 104px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-wrap: wrap;
+    height: 224px;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 0 16px;
+  }
+}
+
+/* @media screen and (max-width: 465px) {
+  .footer {
+
+  }
+} */
+

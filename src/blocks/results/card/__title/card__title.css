@@ -1,0 +1,37 @@
+.card__title {
+  font-family: 'Roboto Slab';
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .card__title {
+      font-size: 22px;
+      line-height: 24px;
+      max-height: 72px;
+
+
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+  .card__title {
+      font-size: 22px;
+      line-height: 26px;
+      max-width: 256px;
+      max-height: 52px;
+      overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card__title  {
+    max-width: 256px;
+    max-height: 52px;
+    overflow: hidden;
+  }
+}

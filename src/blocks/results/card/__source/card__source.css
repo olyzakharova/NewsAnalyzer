@@ -1,0 +1,33 @@
+.card__source {
+  color: #b6bcbf;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab';
+  font-weight: 900;
+  margin-bottom: 24px;
+  margin: 0 24px 24px;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.card__source:hover {
+  cursor: pointer;
+  color: #9fa4a7;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+@media screen and (max-width: 767px) {
+  .card__source {
+    margin-top: 12px;
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card__source {
+    margin-top: 5px;
+  }
+}

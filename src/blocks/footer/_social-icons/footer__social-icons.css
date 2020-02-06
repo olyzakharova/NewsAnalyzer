@@ -1,0 +1,7 @@
+@import url(./_facebook/footer__social-icons_facebook.css);
+@import url(./_github/footer__social-icons_github.css);
+
+.footer__social-icons {
+  display:flex;
+}
+

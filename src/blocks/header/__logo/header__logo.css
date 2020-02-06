@@ -1,0 +1,26 @@
+.header__logo {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  z-index: 1;
+}
+
+
+.header__logo:visited {
+  color: #fff;
+}
+
+.header__logo-black {
+  color:#000;
+}
+
+.header__logo-black:visited {
+  color:#000;
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+   width: 117px;
+  }
+}

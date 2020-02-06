@@ -1,0 +1,18 @@
+@keyframes move {
+  from {
+      transform: rotate(-20deg);
+  }
+
+  to {
+      transform: rotate(365deg);
+  }
+}
+
+.preloader_loading-picture {
+  margin: 80px auto 24px;
+  width: 74px;
+  height: 74px;
+  object-fit: none;
+  transform: rotate(-20deg);
+  animation: move 1s infinite linear;
+}

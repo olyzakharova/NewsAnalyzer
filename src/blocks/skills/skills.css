@@ -1,0 +1,30 @@
+@import url(./__title/skills__title.css);
+@import url(./__stack/skills__stack.css);
+
+.skills {
+  background-color: #f5f6f7;
+  padding: 80px 104px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .skills {
+    padding: 40px 40px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 32px 16px 50px;
+  }
+}

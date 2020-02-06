@@ -1,0 +1,29 @@
+@import url(./__text/users__text.css);
+@import url(./__title/users__title.css);
+
+.users {
+  padding: 80px 10% 94px;
+  box-sizing: border-box;
+  color:#1a1b22;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1023px) {
+  .users {
+    padding: 29px 40px 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .users {
+    max-width: 767px;
+    padding: 16px 16px 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .users {
+      max-width: 425px;
+      padding: 16px 16px 30px;
+  }
+}
