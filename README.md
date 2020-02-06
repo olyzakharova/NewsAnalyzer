@@ -4,7 +4,7 @@
 Version: v.1.0
 
 Author: Zakharova Olya
-
+## [Link to the project/Ссылка на проект](https://olyzakharova.github.io/NewsAnalyzer/)
 ## Описание Проекта
 __Используемые технологии:__ JS, CSS, HTML, WebPack, GIT, Babel.
 
