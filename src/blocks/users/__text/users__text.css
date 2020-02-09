@@ -3,7 +3,7 @@
   line-height: 1.5;
   margin: 24px 0 0;
   width: 65%;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
 }
 
 @media screen and (max-width: 1023px) {

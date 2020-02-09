@@ -2,7 +2,7 @@
   max-width: 250px;
   display: flex;
   justify-content: space-between;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   color: #b6bcbf;
   font-style: normal;
   font-weight: normal;
@@ -27,7 +27,7 @@
 }
 
 .analytics__table-underline-item {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   color: #b6bcbf;
   font-style: normal;
   font-weight: normal;
@@ -48,7 +48,7 @@
   justify-content: space-between;
   flex-direction: column;
   width:104px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   color: #1a1b22;
   font-style: normal;
   font-weight: normal;
@@ -82,7 +82,7 @@ ul.analytics__table-figure {
   display: block;
   background: #2f71e5;
   color: #fff;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   font-style: normal;
   font-weight: bold;
   font-size: 12px;

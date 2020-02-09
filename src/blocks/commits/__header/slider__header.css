@@ -1,7 +1,7 @@
 @import url(./__title/slider_header-title.css);
 
 .slider__header {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', 'Helvetica Neue', 'Arial';
   font-size: 40px;
   line-height: 46px;
   display: flex;

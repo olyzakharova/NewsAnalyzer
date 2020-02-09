@@ -7,7 +7,7 @@
   justify-content: space-between;
   min-height: 64px;
   flex-wrap: nowrap;
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   font-size: 18px;
   margin: 0 auto;
   align-items: center;
@@ -29,10 +29,4 @@
     padding: 0 16px;
   }
 }
-
-/* @media screen and (max-width: 465px) {
-  .footer {
-
-  }
-} */
 

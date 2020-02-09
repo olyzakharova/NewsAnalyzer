@@ -1,7 +1,7 @@
 .card__source {
   color: #b6bcbf;
   text-transform: uppercase;
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', 'Helvetica Neue', 'Arial';
   font-weight: 900;
   margin-bottom: 24px;
   margin: 0 24px 24px;

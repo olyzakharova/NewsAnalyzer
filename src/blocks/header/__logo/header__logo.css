@@ -20,6 +20,16 @@
   color:#000;
 }
 
+.header__logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  -webkit-transition: scale(1.2);
+  -moz-transition: scale(1.2);
+  -ms-transition: scale(1.2);
+  -o-transition: scale(1.2);
+  transition: scale(1.2);
+}
+
 @media screen and (max-width: 767px) {
   .header__logo {
    width: 117px;

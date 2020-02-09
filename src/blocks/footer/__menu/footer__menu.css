@@ -1,5 +1,5 @@
 .footer__menu {
-  font-family: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', 'Helvetica Neue', 'Arial';
   display: flex;
   flex-wrap: wrap;
   min-width: 360px;
@@ -21,6 +21,15 @@
   color: #000;
 }
 
+.footer__menu-link:hover {
+  cursor: pointer;
+  color: #9fa4a7;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}
 
 @media screen and (max-width: 1023px) {
   .footer__menu-link {

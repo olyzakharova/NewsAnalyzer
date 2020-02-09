@@ -3,7 +3,7 @@
 }
 
 .analytics__menu-item {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   color: #1a1b22;
   font-style: normal;
   font-weight: normal;
@@ -17,7 +17,7 @@
 }
 
 .analytics__menu-item-selected {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
   color: #b6bcbf;
   font-style: normal;
   font-weight: normal;

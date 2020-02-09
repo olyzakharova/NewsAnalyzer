@@ -6,6 +6,13 @@
   border-radius: 100px;
   width: 608px;
   height: 64px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.search__form:focus-within {
+  border: 1px solid #2f71e5;
+  outline: #2f71e5;
 }
 
 @media screen and (max-width: 1023px) {
