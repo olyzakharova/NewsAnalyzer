@@ -31,6 +31,11 @@
   transition: all .1s linear;
 }
 
+ul.footer__menu {
+  padding-left:0;
+  list-style: none;
+}
+
 @media screen and (max-width: 1023px) {
   .footer__menu-link {
     margin-right: 25px;

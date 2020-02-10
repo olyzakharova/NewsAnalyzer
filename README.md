@@ -6,6 +6,7 @@ Version: v.1.0
 Author: Zakharova Olya
 ## [Link to the project/Ссылка на проект](https://olyzakharova.github.io/NewsAnalyzer/)
 ## Описание Проекта
+__Назначение__: Сервис для анализа происходящих в мире событий. Его задача — установить, насколько популярны новости на определённую тему.
 __Используемые технологии:__ JS, CSS, HTML, WebPack, GIT, Babel.
 
 ## Локальный запуск
