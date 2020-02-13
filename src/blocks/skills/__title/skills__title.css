@@ -1,0 +1,21 @@
+.skills__title {
+  font-family: 'Roboto Slab', 'Helvetica Neue', 'Arial';
+  color:#1a1b22;;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0;
+  font-weight: 400;
+  max-width: 344px;
+}
+
+@media screen and (max-width: 1023px) {
+  .skills__title {
+    font-size: 2.12rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__title {
+    font-size: 1.87rem;
+  }
+}

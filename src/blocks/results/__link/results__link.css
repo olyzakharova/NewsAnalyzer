@@ -1,0 +1,25 @@
+.results__link-to-analytics {
+  display: flex;
+  text-decoration: none;
+  color: #1a1b22;
+  font-size: 18px;
+  width: 223px;
+  line-height: 24px;
+  height: 46px;
+  align-items: center;
+}
+
+.results__link-to-analytics_img {
+  width: 24px;
+  height: 24px;
+}
+
+.results__link-to-analytics:hover {
+  cursor: pointer;
+  color: #9fa4a7;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  -ms-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+}

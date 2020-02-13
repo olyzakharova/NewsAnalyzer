@@ -1,0 +1,30 @@
+@import url(../header/__logo/header__logo.css);
+@import url(../header/__menu/header__menu.css);
+@import url(../header/__background/header__background.css);
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  font-family: 'Roboto', 'Helvetica Neue', 'Arial';
+  color:#fff;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  padding: 0 104px;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.header-white {
+  box-shadow: inset 0px -1px 0px #D1D2D6;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 0 16px;
+    height: 56px;
+  }
+}

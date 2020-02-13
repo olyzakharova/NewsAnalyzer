@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Oly Zakharova">
+  <meta name="description" content="Diploma Project. News Analyzer">
+  <title>Analytics</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
+  <link rel="shortcut icon" type="image/x-icon" href="../<%=require('../../img/favicon.ico')%>">
+  <link rel="icon" type="image/x-icon" href="../<%=require('../../img/favicon.ico')%>">
+</head>
+<body class="body">
+  <div class="page-container">
+    <header class="header header-white">
+      <a href="../" class="header__logo header__logo-black">NewsAnalyzer</a>
+      <nav class="header__menu header__menu-white">
+        <ul class="header__menu-list">
+        <li><a href="../" class="header__menu-link header__menu-link-analytics header__menu-link-white">Главная</a></li>
+        <li><a href="../about/" class="header__menu-link header__menu-link-white">О проекте</a></li>
+      </ul>
+      </nav>
+    </header>
+    <section class="analytics">
+      <nav class="analytics__menu">
+        <a href="../" class="analytics__menu-item">Главная</a>
+        <a href="./" class="analytics__menu-item analytics__menu-item-selected">/ Аналитика</a>
+      </nav>
+      <div class="analytics__header">
+          <h1 class="analytics__header-title">Вы спросили: "Путешествия"</h1>
+          <h2 class="analytics__header-text">Новостей за неделю: <span>34 520</span></h2>
+          <h2 class="analytics__header-text">Упоминаний в заголовках: <span>253</span></h2>
+      </div>
+    </section>
+    <section class="analytics__container">
+      <h2 class="analytics__title">Аналитика по дням</h2>
+      <div class="analytics__table">
+        <div class="analytics__table-header">
+          <div class="analytics__header-date">Дата (август)</div>
+          <div class="analytics__header-amount">Кол-во упоминаний</div>
+        </div>
+        <div class="analytics__table-container">
+          <div class="analytics__table-underline">
+            <div class="analytics__table-underline-item">0</div>
+            <div class="analytics__table-underline-item">25</div>
+            <div class="analytics__table-underline-item">50</div>
+            <div class="analytics__table-underline-item">75</div>
+            <div class="analytics__table-underline-item">100</div>
+          </div>
+          <div class="analytics__table-graphic">
+            <ul class="analytics__table-week">
+              <li class="analytics__table-week-day">19, пн</li>
+              <li class="analytics__table-week-day">20, вт</li>
+              <li class="analytics__table-week-day">21, ср</li>
+              <li class="analytics__table-week-day">22, чт</li>
+              <li class="analytics__table-week-day">24, пт</li>
+              <li class="analytics__table-week-day">25, сб</li>
+              <li class="analytics__table-week-day">26, вс</li>
+            </ul>
+            <ul class="analytics__table-figure">
+              <li class="analytics__table-figure-chart">15</li>
+              <li class="analytics__table-figure-chart">18</li>
+              <li class="analytics__table-figure-chart">11</li>
+              <li class="analytics__table-figure-chart">39</li>
+              <li class="analytics__table-figure-chart">45</li>
+              <li class="analytics__table-figure-chart">73</li>
+              <li class="analytics__table-figure-chart">34</li>
+            </ul>
+          </div>
+          <div class="analytics__table-underline">
+            <div class="analytics__table-underline-item">0</div>
+            <div class="analytics__table-underline-item">25</div>
+            <div class="analytics__table-underline-item">50</div>
+            <div class="analytics__table-underline-item">75</div>
+            <div class="analytics__table-underline-item">100</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Oly Zakharova</p>
+      <nav class="footer__menu">
+        <ul class="footer__menu">
+          <li><a href="../" class="footer__menu-link">Главная</a></li>
+          <li><a href="../about/" class="footer__menu-link">О проекте</a></li>
+          <li><a href="https://praktikum.yandex.ru" target="_blank" class="footer__menu-link">Яндекс.Практикум</a></li>
+      </ul>
+      </nav>
+      <div class="footer__social-icons">
+        <a class="footer__social-icons" target="_blank" href="https://github.com/olyzakharova"><img src="../<%=require('../../img/social/github.svg')%>" alt="github icon" class="footer__social-icons_github"></a>
+        <a class="footer__social-icons" target="_blank" href="https://www.facebook.com/olyzakharova"><img src="../<%=require('../../img/social/facebook.svg')%>" alt="facebook icon" class="footer__social-icons_facebook"></a>
+      </div>
+    </footer>
+    </div>
+    <script src='<%= htmlWebpackPlugin.files.chunks.analytics.entry %>'></script>
+</body>
+</html>

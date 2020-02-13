@@ -1,0 +1,30 @@
+@import url(./__button/results__button.css);
+@import url(./__title/results__title.css);
+@import url(./__link/results__link.css);
+@import url(./__header-wrap/results__header-wrap.css);
+@import url(./__container/results__container.css);
+@import url(./card/card.css);
+
+.results {
+  background-color: #f5f6f7;
+  padding: 80px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .results_hide {
+  display: none;
+} */
+
+@media screen and (max-width: 767px) {
+  .results {
+    background-color: #f5f6f7;
+    padding: 32px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

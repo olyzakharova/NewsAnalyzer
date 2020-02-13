@@ -1,0 +1,10 @@
+.results__title {
+  color: #1a1b22;
+  font-family: 'Roboto Slab', 'Helvetica Neue', 'Arial';
+  font-weight: 400;
+  font-size: 2.5rem;
+  max-width: 720px;
+  line-height: 46px;
+  margin-top: 0;
+}
+

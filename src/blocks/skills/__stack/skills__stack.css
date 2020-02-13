@@ -1,0 +1,27 @@
+.skills__stack {
+  display: grid;
+  grid-template-columns: 120px 120px 120px 120px;
+  column-gap: 40px;
+  row-gap: 40px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1160px) {
+  .skills__stack {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skills__stack {
+    width: 100%;
+    display: grid;
+    margin: 40px auto 0;
+    grid-template-columns: 120px 120px;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+}

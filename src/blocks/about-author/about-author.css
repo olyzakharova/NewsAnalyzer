@@ -1,0 +1,32 @@
+@import url(./__picture/about-author__picture.css);
+@import url(./__description/about-author__description.css);
+
+.about-author {
+  display:flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  padding: 80px 104px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-author {
+    padding: 40px 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-author {
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 16px 80px;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-author {
+      max-width: 425px;
+      align-items: center;
+      flex-direction: column;
+  }
+}

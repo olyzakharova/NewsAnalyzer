@@ -1,0 +1,13 @@
+@import url(../../vendor/normalize.css);
+@import url(../../vendor/fonts.css);
+@import url(../../blocks/header/header.css);
+@import url(../../blocks/footer/footer.css);
+@import url(../../blocks/analytics/analytics.css);
+
+body {
+  background-color: #fff;
+}
+
+/* h1, h2, h3, div, img,p, section, span, ul, li, a, header, footer, main {
+  border: 1px solid red;
+} */

@@ -1,0 +1,37 @@
+@import url(./__title/slider_header-title.css);
+
+.slider__header {
+  font-family: 'Roboto Slab', 'Helvetica Neue', 'Arial';
+  font-size: 40px;
+  line-height: 46px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 104px 44px;
+  flex-direction: row;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .slider__header {
+      margin: 0 10% 32px;
+  }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+  .slider__header {
+      margin: 0 auto;
+      width: 95%;
+      max-width: 500px;
+      margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .slider__header {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 425px;
+  }
+}

@@ -1,0 +1,31 @@
+@import url(./__header/analytics__header.css);
+@import url(./__container/analytics__container.css);
+@import url(./__menu/analytics-menu.css);
+@import url(./__table/analytics__table.css);
+@import url(./__title/analytics__title.css);
+
+
+.analytics {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 40px 104px 80px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .analytics {
+      padding: 30px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+  .analytics {
+      padding: 16px 16px 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .analytics {
+      padding: 16px 16px 24px;
+  }
+}

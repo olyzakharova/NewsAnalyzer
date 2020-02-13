@@ -1,0 +1,26 @@
+.results__header-wrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto 0;
+  max-width: 1264px;
+  line-height: 46px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 425px) {
+  .results__header-wrap {
+      flex-direction: column;
+      justify-content: flex-start;
+      max-width: 288px;
+      margin: 32px auto 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .results__header-wrap  {
+      flex-direction: column;
+      justify-content: flex-start;
+      max-width: 288px;
+      margin: 32px auto 0px;
+  }
+}
