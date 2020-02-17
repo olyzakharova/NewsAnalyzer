@@ -16,7 +16,6 @@ const storageParsed = JSON.parse(localStorage.getItem('news'));
 (function setTitle() {
   analyticsRequest.textContent = `Вы спросили: «${request}»`;
 }());
-
 (function setAmountTitles() {
   titlesAmount.textContent = storageParsed.totalResults;
 }());
@@ -73,7 +72,7 @@ class Statistics {
     const dateToFormat = new Date(localStorage.getItem('date'));
     const month = dateToFormat.getMonth();
     const finalMonth = `${monthGenitive[month]}`;
-    dateOfDiagramm.textContent = `Дата (${finalMonth})`;
+    dateOfDiagramm.textConteßnt = `Дата (${finalMonth})`;
   }
 }
 
