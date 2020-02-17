@@ -94,7 +94,7 @@ ul.analytics__table-figure {
   height: 19px;
 }
 
-.analytics__table-figure-chart:nth-child(1) {
+/* .analytics__table-figure-chart:nth-child(1) {
   width: 15%;
 }
 
@@ -120,7 +120,7 @@ ul.analytics__table-figure {
 
 .analytics__table-figure-chart:nth-child(7) {
   width: 34%;
-}
+} */
 
 @media screen and (max-width: 767px) and (min-width: 425px) {
   .analytics__table-underline  {

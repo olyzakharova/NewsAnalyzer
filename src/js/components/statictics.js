@@ -10,8 +10,8 @@ const dateOfDiagramm = document.querySelector('.analytics__header-date');
 const analyticsRequest = document.querySelector('.analytics__header-title');
 const weeksAmount = document.getElementById('week-amount');
 const titlesAmount = document.getElementById('title-amount');
-const request = localStorage.getItem('request');
-const storageParsed = JSON.parse(localStorage.getItem('articles'));
+const request = localStorage.getItem('keyword');
+const storageParsed = JSON.parse(localStorage.getItem('news'));
 
 (function setTitle() {
   analyticsRequest.textContent = `Вы спросили: «${request}»`;
