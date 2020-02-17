@@ -60,19 +60,8 @@
         <a class="results__link-to-analytics" href="./analytics/">Посмотреть аналитику<img class="results__link-to-analytics_img" src="<%= require('./img/arrow.svg')%>" alt="go to analytics"></a>
       </div>
         <div class="results__container">
-        <template id="card-container">
-          <div class="card">
-            <div class="card__content">
-              <img class="card__picture" src="" alt="">
-              <div class="card__container">
-                <p class="card__date"></p>
-                <h5 class="card__title"></h5>
-                <p class="card__text"></p>
-              </div>
-            </div>
-            <p class="card__source"></p>
-          </div>
-        </template>
+          <!-- <div class="card"> -->
+        <!-- </div> -->
       </div>
       <button class="results__button" id="show-more">Показать еще</button>
     </section>
@@ -102,6 +91,20 @@
       </div>
     </footer>
   </div>
+
+  <template id="card-container">
+    <div class="card">
+      <div class="card__content">
+        <img class="card__picture" src="" alt="">
+        <div class="card__container">
+          <p class="card__date"></p>
+          <h5 class="card__title"></h5>
+          <p class="card__text"></p>
+        </div>
+      </div>
+      <p class="card__source"></p>
+    </div>
+  </template>
   <script src='<%= htmlWebpackPlugin.files.chunks.main.entry %>'></script>
 </body>
 </html>

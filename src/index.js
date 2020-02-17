@@ -34,13 +34,6 @@ function validate() {
   }
 }
 
-function showMore() {
-  const data = dataStorage.cutSomeElements(STEP_SHOW);
-  data.length < STEP_SHOW || dataStorage.isEmpty() ? buttonShowMore.close()
-    : buttonShowMore.open();
-  data.forEach((item) => container.addCard(new Card(item)));
-}
-
 function searchNews(event) {
   event.preventDefault();
   if (searchInput.getValue()) {
@@ -50,6 +43,12 @@ function searchNews(event) {
   } else errorMessage.open();
 }
 
+function showMore() {
+  const data = dataStorage.cutSomeElements(STEP_SHOW);
+  data.length < STEP_SHOW || dataStorage.isEmpty() ? buttonShowMore.close()
+    : buttonShowMore.open();
+  data.forEach((item) => container.addCard(new Card(item)));
+}
 const searchInput = new SearchInput(document.querySelector('.search__form-input'), { input: validate });
 const buttonSearch = new SearchFormElement(document.querySelector('.search__button'), { click: searchNews });
 const buttonShowMore = new BaseComponent(document.querySelector('.results__button'), { click: showMore });

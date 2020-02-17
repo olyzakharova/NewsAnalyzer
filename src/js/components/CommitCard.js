@@ -13,11 +13,11 @@ export default class CommitCard {
 
   _create(commit) {
     const commitCard = document.querySelector('#commit-card').content;
+    commitCard.querySelector('.slider__commit-date').textContent = getCustomDate(commit.commit.author.date);
     const image = commitCard.querySelector('.slider__commit-image');
     image.src = commit.author.avatar_url;
     image.setAttribute('alt', `${commit.author.login}`);
     // document.querySelector('#commit-card').setAttribute('onclick', 'location.href = `https://github.com/olyzakharova/NewsAnalyzer/commits`');
-    commitCard.querySelector('.slider__commit-date').textContent = getCustomDate(commit.commit.author.date);
     commitCard.querySelector('.slider__commit-name').textContent = commit.author.login;
     commitCard.querySelector('.slider__commit-email').textContent = commit.commit.author.email;
     commitCard.querySelector('.slider__commit-text').textContent = commit.commit.message;
