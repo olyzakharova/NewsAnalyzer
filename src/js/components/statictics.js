@@ -1,11 +1,20 @@
+/* eslint-disable no-confusing-arrow */
+/* eslint-disable no-param-reassign */
+/* eslint-disable max-len */
+/* eslint-disable no-shadow */
 // eslint-disable-next-line max-len
 // Класс, отвечающий за логику работы графиков со статистикой на странице аналитики. Конструктор класса получает объект, содержащий текущее состояние локального браузерного хранилища.
 
 /* eslint-disable no-plusplus */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable no-undef */
-import { dayOfWeek, monthGenitive, millisecondsOfDay } from '../utils/utils';
+import {
+  dayOfWeek, monthGenitive, millisecondsOfDay, getAllEntriesStroke,
+} from '../utils/utils';
 
+import DataStorage from '../modules/DataStorage';
+
+const storageForTitlesCount = new DataStorage([]);
 const dateOfDiagramm = document.querySelector('.analytics__header-date');
 const analyticsRequest = document.querySelector('.analytics__header-title');
 const weeksAmount = document.getElementById('week-amount');
@@ -17,7 +26,8 @@ const storageParsed = JSON.parse(localStorage.getItem('news'));
   analyticsRequest.textContent = `Вы спросили: «${request}»`;
 }());
 (function setAmountTitles() {
-  titlesAmount.textContent = storageParsed.totalResults;
+  storageForTitlesCount.updateData(storageParsed.articles);
+  titlesAmount.textContent = storageForTitlesCount.getData().reduce((prev, article) => getAllEntriesStroke(article.title, request) ? ++prev : prev, 0);
 }());
 
 (function setAmountNews() {
@@ -72,7 +82,7 @@ class Statistics {
     const dateToFormat = new Date(localStorage.getItem('date'));
     const month = dateToFormat.getMonth();
     const finalMonth = `${monthGenitive[month]}`;
-    dateOfDiagramm.textConteßnt = `Дата (${finalMonth})`;
+    dateOfDiagramm.textContent = `Дата (${finalMonth})`;
   }
 }
 

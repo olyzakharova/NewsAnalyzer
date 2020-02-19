@@ -11,7 +11,7 @@ import Layer from '../../js/components/Layer';
 import GithubApi from '../../js/modules/GithubApi';
 
 const githubApiField = new GithubApi();
-const cardList = new Layer(document.querySelector('.swiper-container'));
+const cardList = new Layer(document.querySelector('.commits'));
 const slider = new CardList(document.querySelector('.swiper-wrapper'));
 const mySwiper = new Swiper('.swiper-container', {
   updateOnWindowResize: true,

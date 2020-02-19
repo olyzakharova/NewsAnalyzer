@@ -31,8 +31,8 @@ export function getCustomDate(string) {
   return `${date.getDate()} ${getMonthStroke(date.getMonth())}, ${date.getFullYear()}`;
 }
 
-export function getAllEntriesStroke(text, word) {
-  return text.match(new RegExp(`${word}`, 'gi'));
+export function getAllEntriesStroke(request, word) {
+  return request.match(new RegExp(`${word}`, 'gi'));
 }
 
 export function loadingProcess(isLoading) {

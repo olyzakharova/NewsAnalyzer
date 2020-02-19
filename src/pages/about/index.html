@@ -71,11 +71,11 @@
        <div class="swiper-button-prev"></div>
         <div class="swiper-container">
           <div class="swiper-wrapper">
-        </div>
-        <div class="swiper-pagination"></div>
+          </div>
+           <div class="swiper-pagination"></div>
       </div>
       <div class="swiper-button-next next"></div>
-</div>
+    <!-- </div> -->
       <a class="slider__git-button-mobile" target="_blank" href="https://github.com/olyzakharova/">Открыть в GitHub</a>
       </section>
       <footer class="footer">
@@ -93,22 +93,21 @@
         </div>
       </footer>
     </div>
-
-    <template id="commit-card">
-      <div class="swiper-slide">
-        <div class="slider__commit-card">
-          <p class="slider__commit-date"></p>
-          <div class="slider__commit-user">
-            <img class="slider__commit-image">
-            <div>
-              <h4 class="slider__commit-name"></h4>
-              <p class="slider__commit-email"></p>
-            </div>
+        <template id="commit-card">
+          <div class="swiper-slide">
+            <a class="slider__commit-card" target="_blank" href="">
+              <p class="slider__commit-date"></p>
+              <div class="slider__commit-user">
+                <img class="slider__commit-image" src="" alt="">
+                <div>
+                  <h4 class="slider__commit-name"></h4>
+                  <p class="slider__commit-email"></p>
+                </div>
+              </div>
+              <p class="slider__commit-text"></p>
+            </a>
           </div>
-          <p class="slider__commit-text"></p>
-        </div>
-      </div>
-  </template>
+      </template>
       <script src='<%= htmlWebpackPlugin.files.chunks.about.entry %>'></script>
   </body>
 </html>

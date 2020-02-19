@@ -44,10 +44,10 @@ function searchNews(event) {
 }
 
 function showMore() {
-  const data = dataStorage.cutSomeElements(STEP_SHOW);
-  data.length < STEP_SHOW || dataStorage.isEmpty() ? buttonShowMore.close()
+  const cardsByButton = dataStorage.cutSomeElements(STEP_SHOW);
+  cardsByButton.length < STEP_SHOW || dataStorage.isEmpty() ? buttonShowMore.close()
     : buttonShowMore.open();
-  data.forEach((item) => container.addCard(new Card(item)));
+  cardsByButton.forEach((item) => container.addCard(new Card(item)));
 }
 const searchInput = new SearchInput(document.querySelector('.search__form-input'), { input: validate });
 const buttonSearch = new SearchFormElement(document.querySelector('.search__button'), { click: searchNews });
