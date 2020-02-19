@@ -2,7 +2,7 @@
 
 const GITHUB_URL = 'https://api.github.com';
 const GITHUB_NAME = 'olyzakharova';
-const GITHUB_REPOSITORIES = 'NewsAnalyzer';
+const GITHUB_REPOSITORIES = 'BMSTU-DZ_AYAP';
 
 const NEWS_API_URL = 'https://newsapi.org/v2';
 const NEWS_API_KEY = 'bb4c22a6bdc74da5ba8af3fb411259d5';
