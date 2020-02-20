@@ -9,6 +9,7 @@
 @import url(blocks/footer/footer.css);
 @import url(blocks/circle-preloader/circle-preloader.css);
 @import url(blocks/background-container/background-container.css);
+@import url(blocks/error/error.css);
 
 body {
   background-color: #fff;

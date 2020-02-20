@@ -17,8 +17,8 @@ export default class Card {
     // newsCard.setAttribute('onclick', `location.href = "${card.url}"`);
     newsCard.querySelector('.card__date').textContent = getCustomDate(card.publishedAt);
     newsCard.querySelector('.card__title').textContent = card.title;
-    newsCard.querySelector('.card__text').textContent = card.description;
     newsCard.querySelector('.card__source').textContent = card.source.name;
+    newsCard.querySelector('.card__text').textContent = card.description;
     return newsCard.cloneNode(true);
   }
 }

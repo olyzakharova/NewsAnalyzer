@@ -20,3 +20,20 @@
     max-height: 480px;
   }
 }
+
+
+.search__error-hide {
+  display:none;
+}
+
+.search__error {
+    width: calc(100% - 50px);
+    padding: 2px 19px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #dc143c;
+    font-size: 16px;
+    position: absolute;
+    top: -25px;
+    left: 5px;
+}
