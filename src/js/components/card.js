@@ -14,7 +14,7 @@ export default class Card {
     const image = newsCard.querySelector('.card__picture');
     image.src = card.urlToImage;
     image.setAttribute('alt', `${card.title}`);
-    // newsCard.setAttribute('onclick', `location.href = "${card.url}"`);
+    newsCard.querySelector('.card').href = card.url;
     newsCard.querySelector('.card__date').textContent = getCustomDate(card.publishedAt);
     newsCard.querySelector('.card__title').textContent = card.title;
     newsCard.querySelector('.card__text').textContent = card.description;
