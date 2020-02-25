@@ -20,19 +20,10 @@ export default class CommitCard {
     commitCard.querySelector('.slider__commit-date').textContent = getCustomDate(commit.commit.author.date);
     commitCard.querySelector('.slider__commit-card').href = commit.html_url;
     // commitCard.querySelector('.slider__commit-image').src = commit.author.avatar_url;
-    // commitCard.querySelector('.slider__commit-image').src = 'https://sun1-94.userapi.com/4DAQB-XrYwvSqpGeDGZIy-7n47oQZpUI3eI6Pw/6dq3kulEzfw.jpg';
-    commitCard.querySelector('.slider__commit-image').src = function () {
-      if (commit.author.avatar_url === null) { return 'https://sun1-94.userapi.com/4DAQB-XrYwvSqpGeDGZIy-7n47oQZpUI3eI6Pw/6dq3kulEzfw.jpg'; }
-      return commit.author.avatar_url;
-    };
+    // так как коммиты делались иногад с рабочего ноутбука с другим гитовым акком - пришлось сделать вот  так(либо лить коммиты с другого репозитория)
+    commitCard.querySelector('.slider__commit-image').src = 'https://sun1-94.userapi.com/4DAQB-XrYwvSqpGeDGZIy-7n47oQZpUI3eI6Pw/6dq3kulEzfw.jpg';
+    commitCard.querySelector('.slider__commit-image').alt = commit.commit.author.name;
 
-    // if (commit.author.avatar_url !== null) { commitCard.querySelector('.slider__commit-image').src = commit.author.avatar_url; }
-    // ; } else { commitCard.querySelector('.slider__commit-image').src = commit.author.avatar_url; }
-    // commitCard.querySelector('.slider__commit-image').alt = commit.commit.author.name;
-    // const image = commitCard.querySelector('.slider__commit-image');
-    // image.src = commit.author.avatar_url;
-    // image.setAttribute('src', `${commit.author.avatar_url}`);
-    // image.setAttribute('alt', `${commit.author.login}`);
     commitCard.querySelector('.slider__commit-email').textContent = commit.commit.author.email;
     commitCard.querySelector('.slider__commit-text').textContent = commit.commit.message;
     commitCard.querySelector('.slider__commit-name').textContent = commit.commit.author.name;
